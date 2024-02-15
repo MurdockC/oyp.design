@@ -1,0 +1,77 @@
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    height: 300px;
+    margin-bottom: 40px;
+    margin-top: 32px;
+  }
+  
+  .carousel-track-container {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .carousel-track {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    animation: slide 25s linear infinite;
+  }
+  
+  .carousel-slide {
+    margin: 0px;
+    min-width: 30%;
+    height: 300px;
+    list-style: none;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+
+  
+  @media only screen and (max-width: 600px) {
+    .carousel-slide {
+      min-width: 100%; /* Adjust the width for smaller screens */
+    }
+  }
+  
+  /* Tablet */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .carousel-slide {
+      min-width: 50%; /* Adjust the width for medium screens */
+    }
+  }
+  
+  /* Desktop */
+  @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    .carousel-slide {
+      min-width: 33.333%; /* Adjust the width for large screens */
+    }
+  }
+  
+  /* Large Desktop */
+  @media only screen and (min-width: 1441px) {
+    .carousel {
+        width: 100%;
+        overflow: hidden;
+        height: 400px;
+    }
+    .carousel-slide {
+        height: 400px;
+        min-width: 25.3%;
+    }
+  }
+
+
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }

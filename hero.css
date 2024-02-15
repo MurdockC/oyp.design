@@ -1,0 +1,52 @@
+/* Phone */
+@media only screen and (max-width: 600px) {
+    .hero {
+        height: 50vh;
+        min-height: 400px;
+        max-height: 500px;
+        padding: 2rem; /* Adjusted for phone */
+    }
+    .hero h1 {
+        font-size: 2em;
+        text-align: center; /* Smaller font size for phone */
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 601px) and (max-width: 960px) {
+    .hero {
+        height: 55vh;
+        min-height: 400px; /* Adjusted for tablet */
+        max-height: 500px;
+    }
+    .hero h1 {
+        font-size: 3.5em;
+        text-align: center; /* Adjusted font size for tablet */
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 961px) and (max-width: 1200px) {
+    .hero {
+        height: 60vh;
+        min-height: 400px;
+        max-height: 500px; /* Adjusted for desktop */
+    }
+    .hero h1 {
+        font-size: 4.75em;
+        text-align: center; /* Default font size for desktop */
+    }
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 1201px) {
+    .hero {
+        height: 50vh;
+        min-height: 400px;
+        max-height: 500px; /* Adjusted for large desktop */
+    }
+    .hero h1 {
+        font-size: 5em;
+        text-align: center; /* Larger font size for large desktop */
+    }
+}

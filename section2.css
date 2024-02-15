@@ -1,0 +1,42 @@
+.section2 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .four-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: center; /* Center the text if you like */
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px; /* Add some padding */
+  }
+  
+  .column h3 {
+    margin-top: 0; /* Remove the top margin from the h3 */
+  }
+  
+  .column p {
+    margin-top: 10px; /* Add some space between the h3 and the paragraph */
+  }
+
+  .step-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-bottom: 16px;
+  }
